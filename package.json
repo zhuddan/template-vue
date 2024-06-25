@@ -1,15 +1,18 @@
 {
   "type": "module",
+  "version": "0.0.2",
   "private": true,
   "packageManager": "pnpm@9.1.1",
   "scripts": {
-    "build": "vite build",
+    "build": "pnpm version:patch && vite build",
     "dev": "vite --port 3333 --open",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
     "test": "vitest",
-    "up": "taze major -I"
+    "version:major": "pnpm version major --force --no-git-tag-version",
+    "version:minor": "pnpm version minor --force --no-git-tag-version",
+    "version:patch": "pnpm version patch --force --no-git-tag-version"
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
@@ -30,7 +33,6 @@
     "eslint-plugin-format": "^0.1.1",
     "jsdom": "^24.0.0",
     "pnpm": "^9.1.1",
-    "taze": "^0.13.8",
     "typescript": "^5.4.5",
     "unocss": "^0.60.2",
     "unplugin-auto-import": "^0.17.6",
