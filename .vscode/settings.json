@@ -44,5 +44,9 @@
     "json",
     "jsonc",
     "yaml"
+  ],
+  "cSpell.words": [
+    "pinia",
+    "unocss"
   ]
 }

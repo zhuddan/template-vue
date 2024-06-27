@@ -5,9 +5,13 @@
 </route>
 
 <script setup lang="ts" generic="T extends any, O extends any">
+import { useAppStore } from '~/store/app'
+
 defineOptions({
   name: 'IndexPage',
 })
+
+const { reduce, increase } = useAppStore()
 
 const name = ref('')
 
@@ -46,6 +50,18 @@ function go() {
         @click="go"
       >
         Go
+      </button>
+      <button
+        class="m-3 text-sm btn"
+        @click="reduce()"
+      >
+        reduce
+      </button>
+      <button
+        class="m-3 text-sm btn"
+        @click="increase()"
+      >
+        increase
       </button>
     </div>
   </div>
