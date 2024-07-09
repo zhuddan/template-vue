@@ -8,4 +8,9 @@ export default antfu(
       'no-console': 'off',
     },
   },
+  {
+    ignores: [
+      'src/ignore.js',
+    ],
+  },
 )
