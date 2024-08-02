@@ -1,9 +1,3 @@
-<route lang="yaml">
-  meta:
-    layout: home
-    bgColor: yellow
-</route>
-
 <script setup lang="ts" generic="T extends any, O extends any">
 import { useAppStore } from '~/store/app'
 
@@ -70,4 +64,5 @@ function go() {
 <route lang="yaml">
   meta:
     layout: home
+    bgColor: yellow
 </route>
