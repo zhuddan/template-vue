@@ -1,19 +1,17 @@
 {
   "name": "templete-vue",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "packageManager": "pnpm@9.1.1",
   "scripts": {
-    "build": "pnpm version:patch && vite build",
+    "build": "vue-tsc --noEmit && bumpp && vite build",
     "dev": "vite --open",
     "lint": "eslint .",
     "typecheck": "vue-tsc --noEmit",
     "preview": "vite preview",
     "test": "vitest",
-    "version:major": "pnpm version major --force --no-git-tag-version",
-    "version:minor": "pnpm version minor --force --no-git-tag-version",
-    "version:patch": "pnpm version patch --force --no-git-tag-version"
+    "bumpp": "bumpp"
   },
   "dependencies": {
     "@vueuse/core": "^10.9.0",
