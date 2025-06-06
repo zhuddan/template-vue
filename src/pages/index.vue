@@ -8,7 +8,7 @@ const store = useAppStore()
 </script>
 
 <template>
-  <h1>My project template </h1>
+  <h1>My project template</h1>
   <div class="m-2 flex justify-center gap-2">
     <button
       class="icon-btn" @click="store.reduce"
