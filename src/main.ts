@@ -14,12 +14,6 @@ const router = createRouter({
   extendRoutes: routes => setupLayouts(routes),
 })
 
-router.push({
-  path: 'ss',
-  query: {
-
-  },
-})
 const app = createApp(App)
 app.use(pinia)
 app.use(router)
